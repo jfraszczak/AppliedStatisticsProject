@@ -1,0 +1,172 @@
+tree
+version=v3
+num_class=1
+num_tree_per_iteration=1
+label_index=0
+max_feature_idx=19
+objective=regression
+feature_names=Population_density Percentage_early_leavers_from_education Percentage_of_NEET Percentage_of_people_studying_or_training Life_expectancy Hospital_beds Air_passengers Utilised_agricoltural_area Unemployement_rate GVA Students_in_tertiary_education Students Deaths Discharges_after_respiratory_disease Health_personnel Vehicles Farm_labour_force Compensation_of_employees Hours_worked GDP
+feature_infos=[-0.42737874723182573:6.4549402203190738] [-2.0762171378474497:3.0521100045921217] [-1.4962384106221656:3.1245982027194303] [-1.5776254654243791:3.5954203050773215] [-2.9113791419608641:1.5540308091110593] [-0.81867597096854883:4.8904625421404875] [-0.6957540200343304:5.6504347727888931] [-0.93086133340737354:4.2629735406355049] [-1.1995726433864413:3.4615616248057033] [-2.3258994110998041:4.8475896648680035] [-1.7024524379837158:4.1741823061174657] [-1.5756559989743386:3.4634470577134215] [-0.40494189833809441:9.9959784927672679] [-0.52759906048638938:8.3698801351618659] [-2.2368834690509352:4.2383654844229515] [-2.0541649092002228:6.1986088350350679] [-1.0031440120525486:5.028457704780136] [-1.43426734890635:4.9262828394058058] [-2.8168516797896732:4.5681791231656064] [-1.5059556920580914:4.7206209882591708]
+tree_sizes=556 570
+
+Tree=0
+num_leaves=5
+num_cat=0
+split_feature=4 18 0 18
+split_gain=4.47357 0.711679 0.324371 0.17771
+threshold=0.83439862691351918 0.70999806505983165 -0.24613263379059178 -0.071370139165927909
+decision_type=2 2 2 2
+left_child=1 2 3 -1
+right_child=-2 -3 -4 -5
+leaf_value=0.32727866051011784 0.39077957546502479 0.35821799736062532 0.34611447024716263 0.33835587643533171
+leaf_weight=28 22 20 28 30
+leaf_count=28 22 20 28 30
+internal_value=0.349744 0.341227 0.337275 0.333008
+internal_weight=0 106 86 58
+internal_count=128 106 86 58
+is_linear=0
+shrinkage=1
+
+
+Tree=1
+num_leaves=5
+num_cat=0
+split_feature=4 7 8 11
+split_gain=3.62359 0.604544 0.233832 0.233864
+threshold=0.83439862691351918 -0.77922475229299926 -0.081318457968146504 -0.8018663997661809
+decision_type=2 2 2 2
+left_child=1 -1 3 -3
+right_child=-2 2 -4 -5
+leaf_value=0.0055818628448133286 0.036932281955060639 -0.013844897446688265 -0.018950098846107724 -6.7206059942360625e-05
+leaf_weight=26 22 28 30 22
+leaf_count=26 22 28 30 22
+internal_value=0 -0.00766519 -0.0119705 -0.00778271
+internal_weight=0 106 80 50
+internal_count=128 106 80 50
+is_linear=0
+shrinkage=0.1
+
+
+end of trees
+
+feature_importances:
+Life_expectancy=2
+Hours_worked=2
+Population_density=1
+Utilised_agricoltural_area=1
+Unemployement_rate=1
+Students=1
+
+parameters:
+[boosting: gbdt]
+[objective: regression]
+[metric: l1]
+[tree_learner: serial]
+[device_type: cpu]
+[data: ]
+[valid: ]
+[num_iterations: 2]
+[learning_rate: 0.1]
+[num_leaves: 31]
+[num_threads: 0]
+[deterministic: 0]
+[force_col_wise: 0]
+[force_row_wise: 0]
+[histogram_pool_size: -1]
+[max_depth: -1]
+[min_data_in_leaf: 20]
+[min_sum_hessian_in_leaf: 0.001]
+[bagging_fraction: 1]
+[pos_bagging_fraction: 1]
+[neg_bagging_fraction: 1]
+[bagging_freq: 0]
+[bagging_seed: 3]
+[feature_fraction: 1]
+[feature_fraction_bynode: 1]
+[feature_fraction_seed: 2]
+[extra_trees: 0]
+[extra_seed: 6]
+[early_stopping_round: 0]
+[first_metric_only: 0]
+[max_delta_step: 0]
+[lambda_l1: 0]
+[lambda_l2: 0]
+[linear_lambda: 0]
+[min_gain_to_split: 0]
+[drop_rate: 0.1]
+[max_drop: 50]
+[skip_drop: 0.5]
+[xgboost_dart_mode: 0]
+[uniform_drop: 0]
+[drop_seed: 4]
+[top_rate: 0.2]
+[other_rate: 0.1]
+[min_data_per_group: 100]
+[max_cat_threshold: 32]
+[cat_l2: 10]
+[cat_smooth: 10]
+[max_cat_to_onehot: 4]
+[top_k: 20]
+[monotone_constraints: ]
+[monotone_constraints_method: basic]
+[monotone_penalty: 0]
+[feature_contri: ]
+[forcedsplits_filename: ]
+[refit_decay_rate: 0.9]
+[cegb_tradeoff: 1]
+[cegb_penalty_split: 0]
+[cegb_penalty_feature_lazy: ]
+[cegb_penalty_feature_coupled: ]
+[path_smooth: 0]
+[interaction_constraints: ]
+[verbosity: 1]
+[saved_feature_importance_type: 0]
+[linear_tree: 0]
+[max_bin: 255]
+[max_bin_by_feature: ]
+[min_data_in_bin: 3]
+[bin_construct_sample_cnt: 200000]
+[data_random_seed: 1]
+[is_enable_sparse: 1]
+[enable_bundle: 1]
+[use_missing: 1]
+[zero_as_missing: 0]
+[feature_pre_filter: 1]
+[pre_partition: 0]
+[two_round: 0]
+[header: 0]
+[label_column: ]
+[weight_column: ]
+[group_column: ]
+[ignore_column: ]
+[categorical_feature: ]
+[forcedbins_filename: ]
+[precise_float_parser: 0]
+[objective_seed: 5]
+[num_class: 1]
+[is_unbalance: 0]
+[scale_pos_weight: 1]
+[sigmoid: 1]
+[boost_from_average: 1]
+[reg_sqrt: 0]
+[alpha: 0.9]
+[fair_c: 1]
+[poisson_max_delta_step: 0.7]
+[tweedie_variance_power: 1.5]
+[lambdarank_truncation_level: 30]
+[lambdarank_norm: 1]
+[label_gain: ]
+[eval_at: ]
+[multi_error_top_k: 1]
+[auc_mu_weights: ]
+[num_machines: 1]
+[local_listen_port: 12400]
+[time_out: 120]
+[machine_list_filename: ]
+[machines: ]
+[gpu_platform_id: -1]
+[gpu_device_id: -1]
+[gpu_use_dp: 0]
+[num_gpu: 1]
+
+end of parameters
